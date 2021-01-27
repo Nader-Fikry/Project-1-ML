@@ -36,9 +36,4 @@ Bayes.fit(va, va_l)  # optimize the algorithm by another training throw validati
 y = Bayes.predict(te)  # test the model throw test set
 
 
-plt.scatter(data[:, 0], data[:, 1])  # plot iris data
-plt.xlabel(iris.feature_names[0])  # x-axis
-plt.ylabel(iris.feature_names[1])  # y-axis
-plt.show()  # show the plot
-
 accuracy(te_l, y)  # print the accuracy of the model
